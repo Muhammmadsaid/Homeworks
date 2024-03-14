@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lessons List</title>
+</head>
+<body>
+           <h1>Lessons list</h1>
+              <ul>
+                  {% for lesson in lessons %}
+                      <li>
+                          {{ lesson }}
+                      </li>
+                  {% endfor %}
+
+              </ul>
+
+ <a  href="{% url 'pupils' %}">PUPILS</a>
+           <br>
+           <br>
+<a href="{% url 'index' %}">THEMES</a>
+</body>
+</html>
